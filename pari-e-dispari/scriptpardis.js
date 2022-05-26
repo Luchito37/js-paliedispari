@@ -8,11 +8,11 @@ Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto. Se l’utente aveva scelto pari e la somma è pari, ha vinto l’utente, altrimenti il computer
 */
 
-const richiestaParDis = prompt("Inserisci Pari o Dispari :");
+const richiestaParDis = prompt("TI SFIDOO! scegli tra pari e dispari :");
 
 console.log(richiestaParDis)
 
-const richiestaNumero =parseInt(prompt("inserisci un numero da 1 a 5 :")) 
+const richiestaNumero =parseInt(prompt("....adesso scegli un numero da 1 a 5, io farò lo stesso, poi sommeremo i nostri numeri e se il risultato corrisponderà alla tua scelta iniziale VINCERAI!:")) 
 
 console.log(richiestaNumero)
 
@@ -44,18 +44,21 @@ stabiliscoParDis(somma);
 
 console.log(stabiliscoParDis(somma))
 
-function stabiliscoVincitore(sceltaInserita, valoreUscito){
-    let vincitore = "" 
-    if(sceltaInserita === valoreUscito){
-        vincitore = "vince utente";
+
+function stabiliscoVincitore(sceltaInserita){
+    
+    let vincitore = "";
+
+    if(sceltaInserita === "pari"){
+        vincitore = "vince pari";
     }else{
-        vincitore = "vince computer";
+        vincitore = "vince dispari";
     }
 
     return vincitore;
 }
 
-stabiliscoVincitore(richiestaParDis, somma);
+stabiliscoVincitore(stabiliscoParDis(somma));
 
-console.log(stabiliscoVincitore(richiestaParDis, somma))
+console.log(stabiliscoVincitore(stabiliscoParDis(somma)))
 
