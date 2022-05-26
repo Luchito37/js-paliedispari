@@ -43,3 +43,19 @@ function stabiliscoParDis(sommaUtente){
 stabiliscoParDis(somma);
 
 console.log(stabiliscoParDis(somma))
+
+function stabiliscoVincitore(sceltaInserita, valoreUscito){
+    let vincitore = "" 
+    if(sceltaInserita === valoreUscito){
+        vincitore = "vince utente";
+    }else{
+        vincitore = "vince computer";
+    }
+
+    return vincitore;
+}
+
+stabiliscoVincitore(richiestaParDis, somma);
+
+console.log(stabiliscoVincitore(richiestaParDis, somma))
+
