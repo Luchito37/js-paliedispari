@@ -43,6 +43,3 @@ function stabiliscoParDis(sommaUtente){
 stabiliscoParDis(somma);
 
 console.log(stabiliscoParDis(somma))
-
-
-if
